@@ -678,9 +678,8 @@
 	</footer>
 	<!--//footer inc-->
 	</div>
-	<script title="스크롤시 상단으로 가기">
+	<script>
 		$(document).ready(function () {
-
 			if ($(window).width() < 800) {
 				$('._slider_recruitment').bxSlider({
 					slideWidth: 540,
@@ -690,7 +689,7 @@
 				});
 				var slideNoticeMob = $('._slider_notice').bxSlider();
 				slideNoticeMob.reloadSlider({
-					slideWidth: window.innerWidth * 0.8,
+					slideWidth: 615,
 					minSlides: 1,
 					maxSlides: 1,
 				})
@@ -699,11 +698,6 @@
 					slideWidth: 218,
 					maxSlides: 2,
 				})
-				// var slideMob =$('._slider_').bxSlider({})
-				// slideMob.reloadSlider({
-
-				// })
-
 			}
 
 		});

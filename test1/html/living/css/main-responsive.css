@@ -62,11 +62,15 @@
     display: none;
   }
   .main_con3 ._slider_notice img {
-    width: calc(80vw);
-    height: calc(80vw);
+    width: calc(80vw) !important;
+    height: calc(80vw) !important;
+  }
+  .main_con3 .bx-viewport {
+    height:  calc(80vw) !important;
   }
   .main_con3 .main_con3_right .bx-wrapper {
     max-width: unset !important;
+    margin:unset !important;
   }
   .main_con3 ._slider_notice_action {
     bottom: 0;
