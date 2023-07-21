@@ -492,7 +492,7 @@ li {
 }
 .main_con3 .main_con3_left {
   width: 70%;
-  padding-right: 50px;
+  /* padding-right: 50px; */
 }
 .main_con3 .main_con3_left_header {
   justify-content: space-between;
@@ -566,6 +566,7 @@ li {
 }
 .main_con3 .main_con3_right {
   position: relative;
+  min-width: 30%;
 }
 .main_con3 ._slider_notice_action {
   position: absolute;
@@ -574,6 +575,9 @@ li {
 }
 .main_con3 .bx-viewport {
   height: 377px !important;
+}
+.main_con3 .bx-wrapper {
+  margin: 0 0 0 90px !important;
 }
 ._slider_notice_action .box_icon {
   width: 30px;
@@ -763,7 +767,7 @@ li {
 .m_nav .m_menu_sub_item:not(:last-child) {
   border-bottom: 1px solid #d4d4d4;
 }
-.lnb_container .lnb_menu_mob{
+.lnb_container .lnb_menu_mob {
   display: none;
   width: 40px;
   height: 30px;
