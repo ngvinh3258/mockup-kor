@@ -75,4 +75,19 @@
     width: 196px !important;
     height: 54px !important;
   }
+  .sidebar_header{
+    /* display: inline; */
+  }
+  .lnb_container .depth1{
+    display: none;
+  }
+  .lnb_container .lnb_menu_mob{
+    display: unset;
+  }
+  .lnb_container .lnb_logo{
+    width: unset;
+  }
+}
+.main_wrap .bx-wrapper ._slider_ .sl01 ,.main_wrap .bx-wrapper ._slider_ .sl02 ,.main_wrap{
+    height: unset;
 }

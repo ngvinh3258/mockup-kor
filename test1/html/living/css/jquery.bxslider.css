@@ -6,7 +6,7 @@
   position: relative;
   margin-bottom: 60px;
   padding: 0;
-  *zoom: 1;
+  zoom: 1;
   -ms-touch-action: pan-y;
   touch-action: pan-y;
 }
@@ -43,7 +43,6 @@ ul.bxslider {
 /* LOADER */
 .bx-wrapper .bx-loading {
   min-height: 50px;
-  background: url('../images/bx_loader.gif') center center no-repeat #ffffff;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -81,8 +80,8 @@ ul.bxslider {
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
   display: inline-block;
   vertical-align: bottom;
-  *zoom: 1;
-  *display: inline;
+  /* *zoom: 1;
+  *display: inline; */
 }
 .bx-wrapper .bx-pager-item {
   font-size: 0;

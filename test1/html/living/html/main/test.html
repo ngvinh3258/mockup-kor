@@ -19,39 +19,17 @@
 	<!-- // favicon -->
 	<link rel="stylesheet" type="text/css" href="../../css/default.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="../../css/layout.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="/../../css/common.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="../../css/main.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="../../css/main-responsive.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="../../css/jquery-ui.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="../../css/slick.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="../../css/slick-theme.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="../../css/jquery.bxslider.css" media="all" />
-	<script src="/rfc3/user/domain/www.gyeongnam.go.kr~housing.80/0/5717.js"></script>
-	<!-- jquery-1.11.3.min.js -->
-	<script src="/rfc3/user/domain/www.gyeongnam.go.kr~housing.80/0/5718.js"></script>
-	<!-- jquery-ui.min.js -->
-	<script src="/rfc3/user/domain/www.gyeongnam.go.kr~housing.80/0/5719.js"></script>
-	<!-- lnb.js -->
-	<script src="/rfc3/user/domain/www.gyeongnam.go.kr~housing.80/0/5720.js"></script>
-	<!-- jquery.bxslider.js -->
-
-	<script src="/rfc3/user/domain/www.gyeongnam.go.kr~housing.80/0/5721.js"></script>
-	<!-- main.js -->
-	<script src="/rfc3/user/domain/www.gyeongnam.go.kr~housing.80/0/5722.js"></script>
-	<!--  slick.js -->
-	<script src="/rfc3/user/domain/www.gyeongnam.go.kr~housing.80/0/5723.js"></script>
-	<!--  slick.min.js -->
-	<script src="/rfc3/user/domain/www.gyeongnam.go.kr~housing.80/0/5799.js"></script>
+	
 	<!--  carouFredSel.js -->
 	<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="../../js/lnb.js"></script>
 	<script type="text/javascript" src="../../js/jquery.bxslider.js"></script>
 
-	<script type="text/javascript" src="../../js/main.js"></script>
-	<script type="text/javascript" src="../../js/slick.js"></script>
-	<script type="text/javascript" src="../../js/slick.min.js"></script>
-	<script type="text/javascript" src="../../js/carouFredSel.js"></script>
+
 	<!-- 페이지 로봇 검색엔진 숨김 -->
 	<meta name="robots" content="noindex" />
 	<meta name="robots" content="nofollow" />
@@ -69,9 +47,29 @@
 	<div id="wrap" class="main">
 		<!-- header inc-->
 		<header id="header">
+			<script type="text/javascript">
+				$(document).ready(function () {
+
+					$(".m_menu_link").click(function (event) {
+						event.preventDefault();
+						$(".m_menu_item")
+							.not($(this).closest(".m_menu_item"))
+							.removeClass("active");
+						$(this).closest(".m_menu_item").toggleClass("active");
+					});
+					$('.icon_close').click(function () {
+						$('#sidebar_header').css('display', 'none');
+					})
+					$('.lnb_menu_mob').click(function () {
+						$('#sidebar_header').css('display', 'unset');
+					})
+				});</script>
 			<div class="lnb_container clearfix">
 				<nav id="lnb" style="right: 100%; height: auto">
-					<section class="lnb_list">
+					<section class="lnb_list d-flex justify-center">
+						<div class="lnb_menu_mob">
+							<img id="lnb_menu_mob" src="../../images/main/mob_top_menu2.png" />
+						</div>
 						<div class="lnb_logo">
 							<div class="lnb_item_tit">
 								<img class="" src="../../images/main/logo.png" alt="logo_a_shared_housing_story" />
@@ -161,6 +159,57 @@
 						</ul>
 					</section>
 				</nav>
+				<div id="sidebar_header" class="sidebar_header">
+					<div class="sidebar_top">
+						<div id="icon_close" class="icon_close"><img src="../../images/main/lnb_btn_close2.png"
+								alt="icon_close" />
+						</div>
+						<div class="logo_sidebar_box d-flex justify-center"><img class="logo_sidebar"
+								src="../../images/main/logo.png" alt="logo_a_shared_housing_story" /></div>
+						<div class="list_btn_sidebar d-flex justify-center">
+							<button>로그인</button>
+							<button>회원가입</button>
+							<button>SMS 알림신청</button>
+						</div>
+					</div>
+					<div class="sidebar_bot m_nav">
+						<ul class="m_menu">
+							<li class="m_menu_item">
+								<a href="#" class="m_menu_link">주거안내</a>
+								<ul class="m_menu_sub">
+									<li class="m_menu_sub_item"><a href="#">주거지원</a></li>
+									<li class="m_menu_sub_item"><a href="#">금융지원</a></li>
+								</ul>
+							</li>
+							<li class="m_menu_item">
+								<a href="#" class="m_menu_link">한눈에 보기</a>
+								<ul class="m_menu_sub">
+									<li class="m_menu_sub_item"><a href="#">모집공고 조회</a></li>
+									<li class="m_menu_sub_item"><a href="#">임대주택 현황</a></li>
+								</ul>
+							</li>
+							<li class="m_menu_item">
+								<a href="#" class="m_menu_link">주거형 서비스</a>
+								<ul class="m_menu_sub">
+									<li class="m_menu_sub_item"><a href="#">초보 임차인</a></li>
+									<li class="m_menu_sub_item"><a href="#">주거 용어</a></li>
+									<li class="m_menu_sub_item"><a href="#">부동산 용어</a></li>
+									<li class="m_menu_sub_item"><a href="#">청약정보</a></li>
+								</ul>
+							</li>
+							<li class="m_menu_item">
+								<a href="#" class="m_menu_link">소식</a>
+								<ul class="m_menu_sub">
+									<li class="m_menu_sub_item"><a href="#">공지사항</a></li>
+									<li class="m_menu_sub_item"><a href="#">보도자료</a></li>
+									<li class="m_menu_sub_item"><a href="#">정책문의</a></li>
+									<li class="m_menu_sub_item"><a href="#">이용문의</a></li>
+									<li class="m_menu_sub_item"><a href="#">FAQ</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</header>
 		<!-- // header inc -->
@@ -177,6 +226,9 @@
 									pagerCustom: "#bx-pager",
 									auto: true,
 									autoControls: true,
+									minSlides: 1,
+									maxSlides: 1,
+									// slideWidth: width.innerWidth,
 									controls: true,
 									autoControlsSelector: "#bx-controls-auto",
 									startText: "",
@@ -186,17 +238,12 @@
 								});
 							});
 						</script>
-						<!-- main visual -->
-						<!-- <div class="visual_box">
-							<div class="bx-wrapper"> -->
-						<!-- <div class="bx-viewport"> -->
 						<ul class="_slider_">
 							<li class="sl01">
 							</li>
 							<li class="sl02">
 							</li>
 						</ul>
-						<!-- </div> -->
 						<div class="sl_box">
 							<div class="sl_action_box">
 								<div id="bx-pager" class="bx-pager bx-default-pager">
@@ -652,6 +699,10 @@
 					slideWidth: 218,
 					maxSlides: 2,
 				})
+				// var slideMob =$('._slider_').bxSlider({})
+				// slideMob.reloadSlider({
+
+				// })
 
 			}
 
