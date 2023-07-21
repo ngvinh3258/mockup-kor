@@ -444,6 +444,7 @@ li {
   min-height: 246px;
   background: url("../images/main/Layer-yellow.png") no-repeat center;
   background-size: cover;
+  overflow-x: hidden;
 }
 .main_con2_left {
   width: 40%;
@@ -480,12 +481,10 @@ li {
 .main_con2_right .img-yellow {
   position: absolute;
   right: -220px;
-  height: 242px;
+  height: 246px;
 }
 /* main_con3 */
 .main_con3 {
-  /* background: url("../images/main/layout_section3.png") no-repeat center; */
-  /* background-size: cover; */
   background-color: #eff6fc;
   min-height: 510px;
   padding: 50px 10%;
@@ -572,6 +571,9 @@ li {
   position: absolute;
   right: 0;
   bottom: 35px;
+}
+.main_con3 .bx-viewport {
+  height: 377px !important;
 }
 ._slider_notice_action .box_icon {
   width: 30px;
