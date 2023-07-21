@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+
+/* contents  */
+
+
+
+
+/*--------- 반응형 ----------*/
+
+@media all and (max-width:1024px){
+
+}
+
+
+
+@media all and (max-width:768px){
+
+
+}
+
+
+@media all and (max-width:640px){
+  
+
+}
+
+@media all and (max-width:480px){
+ 
+}
+
+
+@media all and (max-width:360px) {
+
+
+}
+
+
+
+
+
