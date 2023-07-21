@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+@media all and (max-width: 1440px) {
+  .main_con3 ._slider_notice_action {
+    bottom: 45px;
+  }
+  .main_con3 .main_con3_list_project li {
+    padding: 33px 0 18px 0;
+  }
+}
+
+@media all and (max-width: 1024px) {
+}
+
+@media all and (max-width: 768px) {
+  .main_wrap .form_box {
+    /* bottom: 0;
+    top: unset; */
+    right: unset;
+    position: relative;
+    border-radius: unset;
+    width: 100%;
+  }
+  .main_wrap .sl_box {
+    top: 700px;
+  }
+  .main_con1_house {
+    justify-content: start;
+    top: -12px;
+  }
+  .main_con1_header .box_btn {
+    top: 45px !important;
+  }
+  .main_con1_body {
+    margin-top: 40px;
+  }
+  .main_con2 {
+    flex-direction: column;
+    /* height: ; */
+  }
+  .main_con2 .main_con2_left {
+    width: 100%;
+    height: 246px;
+  }
+  .main_con2 .main_con2_left img {
+    position: unset;
+    width: 100%;
+  }
+  .main_con2_right .gyeonggi-do {
+    padding-left: 50px;
+    padding-bottom: 20px;
+  }
+  .main_con3 {
+    flex-direction: column;
+    /* min-height: 1300px; */
+  }
+  .main_con3 .main_con3_left {
+    width: 100%;
+    padding: 0;
+  }
+  .avatar_item {
+    display: none;
+  }
+  .main_con3 ._slider_notice img {
+    width: calc(80vw);
+    height: calc(80vw);
+  }
+  .main_con3 .main_con3_right .bx-wrapper {
+    max-width: unset !important;
+  }
+  .main_con3 ._slider_notice_action {
+    bottom: 0;
+  }
+  .main_con4 ._slider_brands_ img {
+    width: 196px !important;
+    height: 54px !important;
+  }
+}

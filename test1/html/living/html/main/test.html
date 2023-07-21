@@ -21,6 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="../../css/layout.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="/../../css/common.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="../../css/main.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="../../css/main-responsive.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="../../css/jquery-ui.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="../../css/slick.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="../../css/slick-theme.css" media="all" />
@@ -166,7 +167,7 @@
 		<!-- container -->
 		<div id="container" class="clearfix">
 			<!-- content -->
-			<div id="content" class="main_con1" style="visibility: visible">
+			<div id="content" class="main_con_slider" style="visibility: visible">
 				<div class="main_wrap">
 					<!-- <h1 class="blind">메인 콘텐츠</h1> -->
 					<section class="ma_visual">
@@ -179,91 +180,92 @@
 									controls: true,
 									autoControlsSelector: "#bx-controls-auto",
 									startText: "",
-									stopText: ""
+									stopText: "",
+									nextText: "",
+									prevText: ""
 								});
 							});
 						</script>
 						<!-- main visual -->
-						<div class="visual_box">
-							<div class="bx-wrapper">
-								<div class="bx-viewport">
-									<ul class="_slider_">
-										<li class="sl01">
-										</li>
-										<li class="sl02">
-										</li>
-									</ul>
-								</div>
-								<div class="sl_box">
-									<div class="sl_action_box">
-										<div id="bx-pager" class="bx-pager bx-default-pager">
-											<div class="bx-pager-item"><a href="" data-slide-index="0"
-													class="bx-pager-link active">1</a></div>
-											<div class="bx-pager-item"><a href="" data-slide-index="1"
-													class="bx-pager-link">2</a></div>
-										</div>
-										<div id="bx-controls-auto" class="bx-controls-auto">
-											<div class="bx-controls-auto-item">
-												<a class="bx-start" href="">
-												</a>
-											</div>
-											<div class="bx-controls-auto-item"><a class="bx-stop" href=""></a>
-											</div>
-										</div>
+						<!-- <div class="visual_box">
+							<div class="bx-wrapper"> -->
+						<!-- <div class="bx-viewport"> -->
+						<ul class="_slider_">
+							<li class="sl01">
+							</li>
+							<li class="sl02">
+							</li>
+						</ul>
+						<!-- </div> -->
+						<div class="sl_box">
+							<div class="sl_action_box">
+								<div id="bx-pager" class="bx-pager bx-default-pager">
+									<div class="bx-pager-item"><a data-slide-index="0" class="bx-pager-link active"></a>
 									</div>
-
-									<div class="text_buying">신혼부부형 매입임대 <a class="btn_slide"> 자세히보기</a></div>
-									<p class="text_buying_description">신혼부부·예비 신혼부부의 주거불안을 해소합니다.</p>
-
+									<div class="bx-pager-item"><a data-slide-index="1" class="bx-pager-link"></a></div>
 								</div>
-								<div class="form_box">
-									<div class="form_box_top">
-										<p class="text">함께하는</p>
-										<p>맞춤형 주거 이야기</p>
-										<small>청년·신혼부부의 행복한 미래와 더 나은
-											주거환경을 위한 주거정보를 제공합니다.</small>
-
-										<div class="box_search_input">
-											<input type="text" placeholder="찾으시는 정보를 입력하세요." />
-											<div class="icon_search">
-												<img src="../../images/main/search-icon.png" alt="search-icon-input" />
-											</div>
-										</div>
-										<small>추천검색어 : #임차보증금#분양정보</small>
+								<div id="bx-controls-auto" class="bx-controls-auto">
+									<div class="bx-controls-auto-item">
+										<a class="bx-start">
+										</a>
 									</div>
-									<div class="form_box_bottom">
-										<div class="box_bottom_header d-flex">
-											<img src="../../images/main/avatar-box.png" alt="avatar-box" />
-											<p>주거소식 찾기</p>
-										</div>
-										<div class="select-box">
-											<select class="">
-												<option value="1">대상별</option>
-											</select>
-											<select class="">
-												<option value="1">연령별</option>
-											</select>
-											<select class="">
-												<option value="1">분야별</option>
-											</select>
-											<select class="">
-												<option value="1">경기도(시군구)</option>
-											</select>
-										</div>
-										<div class="btn_search_box"><button>
-												<div class="btn_search"><img src="../../images/main/search-icon.png"
-														alt="search-button" /> 소식 찾기</div>
-											</button></div>
+									<div class="bx-controls-auto-item"><a class="bx-stop"></a>
 									</div>
 								</div>
 							</div>
 
+							<div class="text_buying">신혼부부형 매입임대 <a class="btn_slide"> 자세히보기</a></div>
+							<p class="text_buying_description">신혼부부·예비 신혼부부의 주거불안을 해소합니다.</p>
+
 						</div>
+						<div class="form_box">
+							<div class="form_box_top">
+								<p class="text">함께하는</p>
+								<p>맞춤형 주거 이야기</p>
+								<small>청년·신혼부부의 행복한 미래와 더 나은
+									주거환경을 위한 주거정보를 제공합니다.</small>
+
+								<div class="box_search_input">
+									<input type="text" placeholder="찾으시는 정보를 입력하세요." />
+									<div class="icon_search">
+										<img src="../../images/main/search-icon.png" alt="search-icon-input" />
+									</div>
+								</div>
+								<small>추천검색어 : #임차보증금#분양정보</small>
+							</div>
+							<div class="form_box_bottom">
+								<div class="d-flex box_bottom_select">
+									<div class="box_bottom_header d-flex">
+										<img src="../../images/main/avatar-box.png" alt="avatar-box" />
+										<p>주거소식 찾기</p>
+									</div>
+									<div class="select-box">
+										<select class="">
+											<option value="1">대상별</option>
+										</select>
+										<select class="">
+											<option value="1">연령별</option>
+										</select>
+										<select class="">
+											<option value="1">분야별</option>
+										</select>
+										<select class="">
+											<option value="1">경기도(시군구)</option>
+										</select>
+									</div>
+								</div>
+								<div class="btn_search_box"><button>
+										<div class="btn_search"><img src="../../images/main/search-icon.png"
+												alt="search-button" /> 소식 찾기</div>
+									</button></div>
+							</div>
+						</div>
+						<!-- </div>
+
+						</div> -->
 					</section>
 				</div>
-
 			</div>
-
 		</div>
 		<!-- main_wrap -->
 		<div class="main_section">
@@ -437,7 +439,7 @@
 							$(".main_con3_header_nav_item").removeClass("highlight");
 							$(this).addClass('highlight');
 						});
-						var slider = $('._slider_notice').bxSlider({
+						var sliderNotice = $('._slider_notice').bxSlider({
 							mode: 'horizontal',
 							slideWidth: 375,
 							pager: false,
@@ -451,16 +453,16 @@
 						});
 						// Click event on the next button
 						$("#_slider_notice_action_next").on("click", function () {
-							slider.goToNextSlide(); // Move to the next slide
+							sliderNotice.goToNextSlide(); // Move to the next slide
 						});
 						$("#_slider_notice_action_prev").on("click", function () {
-							slider.goToPrevSlide(); // Move to the prev slide
+							sliderNotice.goToPrevSlide(); // Move to the prev slide
 						});
 						$("#_slider_notice_action_play").on("click", function () {
-							slider.startAuto(); // Move to the start slide
+							sliderNotice.startAuto(); // Move to the start slide
 						});
 						$("#_slider_notice_action_stop").on("click", function () {
-							slider.stopAuto(); // Move to the stop slide
+							sliderNotice.stopAuto(); // Move to the stop slide
 						});
 					});
 				</script>
@@ -477,9 +479,11 @@
 					</div>
 					<ul class="main_con3_list_project">
 						<li>
-							<div class="project_item">
-								<p class="status_project">공지</p> 2021년 경기청년구직활동수당
-								지원사업(드림카드) 2차 대상자 모집 공고<p class="avatar_item">N</p>
+							<div class="project_item d-flex " style="gap: 4px; ">
+								<p class="status_project">공지</p>
+								<div class="project_item">2021년 경기청년구직활동수당
+									지원사업(드림카드) 2차 대상자 모집 공고</div>
+								<p class="avatar_item">N</p>
 							</div>
 							<p class="date">2021-08-06</p>
 						</li>
@@ -537,7 +541,7 @@
 				<script>
 					$(document).ready(function () {
 
-						var slider = $('._slider_brands_').bxSlider({
+						var sliderBrand = $('._slider_brands_').bxSlider({
 							mode: 'horizontal',
 							slideWidth: 162,
 							slideMargin: 20,
@@ -548,10 +552,10 @@
 						});
 						// Click event on the next button
 						$("#btn_band_next").on("click", function () {
-							slider.goToNextSlide(); // Move to the next slide
+							sliderBrand.goToNextSlide(); // Move to the next slide
 						});
 						$("#btn_band_prev").on("click", function () {
-							slider.goToPrevSlide(); // Move to the prev slide
+							sliderBrand.goToPrevSlide(); // Move to the prev slide
 						});
 
 					});
@@ -628,6 +632,30 @@
 	<!--//footer inc-->
 	</div>
 	<script title="스크롤시 상단으로 가기">
+		$(document).ready(function () {
+
+			if ($(window).width() < 800) {
+				$('._slider_recruitment').bxSlider({
+					slideWidth: 540,
+					minSlides: 1,
+					maxSlides: 1,
+
+				});
+				var slideNoticeMob = $('._slider_notice').bxSlider();
+				slideNoticeMob.reloadSlider({
+					slideWidth: window.innerWidth * 0.8,
+					minSlides: 1,
+					maxSlides: 1,
+				})
+				var sliderBrandMob = $('._slider_brands_').bxSlider({})
+				sliderBrandMob.reloadSlider({
+					slideWidth: 218,
+					maxSlides: 2,
+				})
+
+			}
+
+		});
 
 	</script>
 </body>
