@@ -367,7 +367,7 @@ li {
   position: absolute;
   right: 0;
 }
-.box_sl_recruitment_action .bx-controls-auto a {
+.box_sl_recruitment_action .bx_controls_auto a {
   border: 1px solid #484848;
   border-radius: 80px;
   width: 40px;
@@ -377,7 +377,7 @@ li {
   font-weight: 700;
   text-decoration: none;
 }
-.box_sl_recruitment_action .bx-controls-auto a p {
+.box_sl_recruitment_action .bx_controls_auto a p {
   transform: scale(1, 2);
   font-size: 20px;
   font-weight: 300;
@@ -385,7 +385,7 @@ li {
   line-height: 24px;
   padding-top: 3px;
 }
-.box_sl_recruitment_action .bx-controls-auto a:last-child {
+.box_sl_recruitment_action .bx_controls_auto a:last-child {
   color: #ffffff;
   background-color: #484848;
 }
