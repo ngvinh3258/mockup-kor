@@ -289,21 +289,19 @@ li {
   min-width: 190px;
   height: 40px;
 }
-.form_box_bottom button {
+.form_box_bottom .btn_search_container {
   background-color: #ffd957;
   border-radius: 15px;
   width: 185px;
   height: 42px;
 }
-.form_box_bottom button img {
+.form_box_bottom .btn_search_container img {
   height: 18px;
   width: 17px;
 }
 .form_box_bottom .btn_search {
   height: 18px;
-  display: flex;
   gap: 4px;
-  justify-content: center;
 }
 .form_box_bottom .btn_search_box {
   width: 100%;
@@ -471,8 +469,9 @@ li {
   gap: 8px;
   width: fit-content;
 }
-.main_con2_right .gyeonggi_do .btn_view_detail p {
-  transform: scale(1.5, 1.5);
+.main_con2_right .gyeonggi_do .btn_view_detail span {
+  transform: scale(2, 2);
+  color: #b57f1e;
   /* font-weight: lighter; */
 }
 .main_con2_right .gyeonggi_do_header {
@@ -521,7 +520,7 @@ li {
   height: 56px;
   border: 2px solid #dbdcdf;
 }
-.main_con3 .btn_main_con3_header_add p {
+.main_con3 .btn_main_con3_header_add span {
   transform: scale(4, 4);
   color: #9299b5;
 }
