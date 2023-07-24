@@ -477,6 +477,9 @@ li {
 .main_con2_right .gyeonggi_do_header {
   gap: 8px;
 }
+.main_con2_right .gyeonggi_do_header h1 {
+  margin-top: 9px;
+}
 .main_con2_right .img_yellow {
   position: absolute;
   right: -220px;
@@ -635,6 +638,7 @@ li {
 .main_con1_body .btn_next img {
   height: 36px;
   width: 16px;
+  aspect-ratio: 16/36;
   filter: brightness(0);
 }
 
