@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ko">
 
 <head>
@@ -301,7 +302,7 @@
 								<div class="btn_search_box">
 									<div class="btn_search_container d-flex align-center justify-center">
 										<div class="btn_search d-flex align-center"><img
-												src="../../images/main/search_icon.webp" height="18" width="18"
+												src="../../images/main/search_icon.webp" height="17" width="18"
 												alt="btn_search"> 소식 찾기</div>
 									</div>
 								</div>
@@ -331,17 +332,17 @@
 							minSlides: 1,
 							maxSlides: 4,
 							slideMargin: 20,
-							prevSelector: "#btn_prev_slide_recruitment",
-							nextSelector: "#btn_next_slide_recruitment",
+							// prevSelector: "#btn_prev_slide_recruitment",
+							// nextSelector: "#btn_next_slide_recruitment",
 							nextText: "",
 							prevText: "",
 						});
 
 						// Click event on the next button
-						$("#btn_next_slide_recruitment").on("click", function () {
+						$("#btn_next_slide_recruitment").on("click", function (e) {
 							slider.goToNextSlide(); // Move to the next slide
 						});
-						$("#btn_prev_slide_recruitment").on("click", function () {
+						$("#btn_prev_slide_recruitment").on("click", function (e) {
 							slider.goToPrevSlide(); // Move to the prev slide
 						});
 						$("#btn_recruitment_next").on("click", function () {
@@ -370,7 +371,7 @@
 							<a class="next" id="btn_next_slide_recruitment" href="#">
 								<p>&gt;</p>
 							</a>
-							<a href="#">
+							<a href="#" id="add_recruitment">
 								<p class="add" style="color: #ffffff;">+</p>
 							</a>
 						</div>
@@ -551,7 +552,8 @@
 				<div class="main_con3_right">
 					<ul class="_slider_notice">
 						<li class="">
-							<img src="../../images/main/image_slider_bot.webp" alt="img_slider_bot">
+							<img src="../../images/main/image_slider_bot.webp" alt="img_slider_bot" width="376"
+								height="377">
 						</li>
 						<li class="">
 							<img src="../../images/main/image_slider_bot.webp" alt="img_slider_bot">
@@ -562,6 +564,7 @@
 						<li class="">
 							<img src="../../images/main/image_slider_bot.webp" alt="img_slider_bot">
 						</li>
+
 					</ul>
 					<ul class="_slider_notice_action d-flex">
 						<li id="_slider_notice_action_prev" class="box_icon d-flex justify-center align-center">
@@ -709,7 +712,9 @@
 			bxClassLink.attr("href", "#");
 			bxClassStart.attr("href", "#");
 			bxClassStop.attr("href", "#");
-
+			$("a").click(function (event) {
+				event.preventDefault();
+			})
 		});
 
 	</script>
