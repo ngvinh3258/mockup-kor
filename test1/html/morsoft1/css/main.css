@@ -1,5 +1,13 @@
 @charset "utf-8";
-
+@font-face {
+  font-family: "Pacifico";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Pacifico Regular"), local("Pacifico-Regular"),
+    url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2)
+      format("woff2");
+  font-display: swap;
+}
 .d-flex {
   display: flex;
 }
@@ -21,12 +29,14 @@ small {
   background-color: #ffffff;
   position: relative;
   padding-left: 30px;
+  padding-right: 30px;
 }
 
 .lnb_list {
   display: flex;
   padding-top: 33px;
   width: 100%;
+  justify-content: space-between;
 }
 
 li {
@@ -45,7 +55,7 @@ li {
 }
 
 .lnb_item {
-  width: calc((100% - (23% + 31px + 41px)) / 4);
+  width: calc((100% - 16%) / 4);
   text-align: center;
 }
 
@@ -59,7 +69,11 @@ li {
 }
 
 .lnb_logo {
-  width: 10%;
+  min-width: 16%;
+}
+.lnb_logo img {
+  width: 218px;
+  height: auto;
 }
 
 .lnb_logo .lnb_item_tit {

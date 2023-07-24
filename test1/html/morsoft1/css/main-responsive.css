@@ -13,6 +13,9 @@
 }
 
 @media all and (max-width: 768px) {
+  .lnb_list {
+    justify-content: center;
+  }
   .main_wrap .form_box {
     right: unset;
     position: relative;
