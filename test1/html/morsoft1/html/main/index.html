@@ -245,18 +245,20 @@
 						<div class="sl_box">
 							<div class="sl_action_box">
 								<div id="bx_pager" class="bx_pager">
-									<div class="bx_pager_item"><a data-slide-index="0" class="bx_pager_link active"></a>
+									<div class="bx_pager_item"><a href="#" data-slide-index="0"
+											class="bx_pager_link active"></a>
 									</div>
-									<div class="bx_pager_item"><a data-slide-index="1" class="bx_pager_link"></a></div>
+									<div class="bx_pager_item"><a href="#" data-slide-index="1"
+											class="bx_pager_link"></a></div>
 								</div>
 								<div class="bx_controls_auto">
-									<a id="bx_start" class="bx_start active bx_controls_auto_item">
+									<a id="bx_start" href="#" class="bx_start active bx_controls_auto_item">
 									</a>
-									<a id="bx_stop" class="bx_stop bx_controls_auto_item"></a>
+									<a id="bx_stop" href="#" class="bx_stop bx_controls_auto_item"></a>
 								</div>
 							</div>
 
-							<div class="text_buying">신혼부부형 매입임대 <a class="btn_slide"> 자세히보기</a></div>
+							<div class="text_buying">신혼부부형 매입임대 <a class="btn_slide" href="#"> 자세히보기</a></div>
 							<p class="text_buying_description">신혼부부·예비 신혼부부의 주거불안을 해소합니다.</p>
 
 						</div>
@@ -361,13 +363,13 @@
 					</div>
 					<div class="box_sl_recruitment_action">
 						<div class="bx_controls_auto d-flex">
-							<a class="prev" id="btn_prev_slide_recruitment">
+							<a class="prev" id="btn_prev_slide_recruitment" href="#">
 								<p>&lt;</p>
 							</a>
-							<a class="next" id="btn_next_slide_recruitment">
+							<a class="next" id="btn_next_slide_recruitment" href="#">
 								<p>&gt;</p>
 							</a>
-							<a>
+							<a href="#">
 								<p class="add" style="color: #ffffff;">+</p>
 							</a>
 						</div>
@@ -385,7 +387,7 @@
 							<p style="font-size: 20px;margin-top: 17px;">경기 A-1블록 5년 공공임대주택<br>예비입주자 모집공고</p>
 							<p style="font-size: 15px;text-decoration: unset;margin: 25px 0 24px 0;">경기 A-1블록 5년
 								공공임대주택<br>예비입주자 모집공고</p>
-							<a>마감일 : 2021-05-26 </a>
+							<a href="#">마감일 : 2021-05-26 </a>
 						</li>
 						<li>
 							<div class="_slider_recruitment_item_header d-flex">
@@ -398,7 +400,7 @@
 							<p style="font-size: 15px;text-decoration: unset;margin: 25px 0 24px 0;">경기B-1블록 5년 공공임대주택
 								<br>예비입주자 모집공고
 							</p>
-							<a>마감일 : 2021-05-26 </a>
+							<a href="#">마감일 : 2021-05-26 </a>
 						</li>
 						<li>
 							<div class="_slider_recruitment_item_header d-flex">
@@ -411,7 +413,7 @@
 							<p style="font-size: 15px;text-decoration: unset;margin: 25px 0 24px 0;">경기B-1블록 5년 공공임대주택
 								<br>예비입주자 모집공고
 							</p>
-							<a>마감일 : 2021-05-26 </a>
+							<a href="#">마감일 : 2021-05-26 </a>
 						</li>
 						<li>
 							<div class="_slider_recruitment_item_header d-flex">
@@ -423,7 +425,7 @@
 								예비입주자 모집공고</p>
 							<p style="font-size: 15px;text-decoration: unset;margin: 25px 0 25px 0;">경기 A-1블록 5년
 								공공임대주택<br>예비입주자 모집공고</p>
-							<a>마감일 : 2021-05-26 </a>
+							<a href="#">마감일 : 2021-05-26 </a>
 						</li>
 						<li>
 							<div class="_slider_recruitment_item_header d-flex">
@@ -434,7 +436,7 @@
 							<p style="font-size: 20px;margin-top: 17px;">경기 A-1블록 5년 공공임대주택<br>예비입주자 모집공고</p>
 							<p style="font-size: 15px;text-decoration: unset;margin: 25px 0 25px 0;">경기 A-1블록 5년
 								공공임대주택<br>예비입주자 모집공고</p>
-							<a>마감일 : 2021-05-26 </a>
+							<a href="#">마감일 : 2021-05-26 </a>
 						</li>
 						<li>
 							<div class="_slider_recruitment_item_header d-flex">
@@ -445,7 +447,7 @@
 							<p style="font-size: 20px;margin-top: 17px;">경기 A-1블록 5년 공공임대주택<br>예비입주자 모집공고</p>
 							<p style="font-size: 15px;text-decoration: unset;margin: 25px 0 25px 0;">경기 A-1블록 5년
 								공공임대주택<br>예비입주자 모집공고</p>
-							<a>마감일 : 2021-05-26 </a>
+							<a href="#">마감일 : 2021-05-26 </a>
 						</li>
 					</ul>
 					<div class="btn_prev" id="btn_recruitment_prev">
@@ -700,10 +702,10 @@
 				if (keyCode == 9) {
 					e.preventDefault();
 					sildePage.goToNextSlide();
-					// bx_pager_link
-					// call custom function here
 				}
 			});
+			var bxClassLink = $('[class$="bx-pager-link"]');
+			bxClassLink.attr("href", "#");
 
 		});
 
