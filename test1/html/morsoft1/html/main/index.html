@@ -219,7 +219,7 @@
 								var sildePage = $('._slider_').bxSlider({
 									pagerCustom: "#bx_pager",
 									auto: true,
-									autoControls: true,
+									// autoControls: true,
 									minSlides: 1,
 									maxSlides: 1,
 									controls: true,
@@ -717,11 +717,22 @@
 			$(".bx-pager-link").attr("href", "#");
 			$(".bx-start").attr("href", "#");
 			$(".bx-stop").attr("href", "#");
+			var bxClassLink = $("[class$='bx-pager-link']");
+			var bxClassStart = $("[class$='bx-start']");
+			var bxClassStop = $("[class$='bx-stop']");
+			bxClassLink.each(function (element) {
+				$(element).attr("href", "#");
+			})
+			bxClassStart.each(function (element) {
+				$(element).attr("href", "#");
+			})
+			bxClassStop.each(function (element) {
+				$(element).attr("href", "#");
+			})
 			$("a").click(function (event) {
 				event.preventDefault();
 			})
 		});
-
 	</script>
 </body>
 
