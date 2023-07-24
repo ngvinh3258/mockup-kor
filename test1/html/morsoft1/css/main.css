@@ -125,14 +125,14 @@ li {
 .main_wrap .bx-wrapper ._slider_ .sl01 {
   min-height: 835px;
   /* padding: 5%; */
-  background: url("../images/main/bg_3.png") no-repeat center;
+  background: url("../images/main/bg_3.webp") no-repeat center;
   background-size: cover;
 }
 
 .main_wrap .bx-wrapper ._slider_ .sl02 {
   min-height: 835px;
   /* padding: 5%; */
-  background: url("../images/main/bg_1.png") no-repeat center;
+  background: url("../images/main/bg_1.webp") no-repeat center;
   background-size: cover;
 }
 .main_wrap {
@@ -218,7 +218,7 @@ li {
   position: absolute;
   right: 5%;
   top: 0;
-  background: url("../images/main/layout_form_slide.png") no-repeat center;
+  background: url("../images/main/layout_form_slide.webp") no-repeat center;
   background-size: cover;
   min-height: 700px;
   width: 550px;
@@ -310,7 +310,7 @@ li {
 }
 /* main_con1 */
 .main_section .main_con1 {
-  background: url("../images/main/bg.png") no-repeat center;
+  background: url("../images/main/bg.webp") no-repeat center;
   background-size: auto;
   /* min-height: 500px; */
   padding: 38px 10%;
@@ -440,7 +440,7 @@ li {
 .main_con2 {
   position: relative;
   min-height: 246px;
-  background: url("../images/main/layout_yellow.png") no-repeat center;
+  background: url("../images/main/layout_yellow.webp") no-repeat center;
   background-size: cover;
   overflow-x: hidden;
 }
@@ -594,25 +594,25 @@ li {
   display: flex;
 }
 ._slider_notice_action .prev {
-  background: url("../images/main/icon_prev.png") no-repeat center;
+  background: url("../images/main/icon_prev.webp") no-repeat center;
   background-size: cover;
   width: 10px;
   height: 17px;
 }
 ._slider_notice_action .next {
-  background: url("../images/main/icon_next.png") no-repeat center;
+  background: url("../images/main/icon_next.webp") no-repeat center;
   background-size: cover;
   width: 10px;
   height: 17px;
 }
 ._slider_notice_action .stop {
-  background: url("../images/main/icon_stop.png") no-repeat center;
+  background: url("../images/main/icon_stop.webp") no-repeat center;
   background-size: cover;
   width: 10px;
   height: 17px;
 }
 ._slider_notice_action .play {
-  background: url("../images/main/icon_play.png") no-repeat center;
+  background: url("../images/main/icon_play.webp") no-repeat center;
   background-size: cover;
   width: 10px;
   height: 17px;
@@ -655,7 +655,7 @@ li {
 }
 
 .footer_con .footer_menu li:not(:last-child) {
-  background: url("../images/main/line_footer.png") no-repeat right 4px;
+  background: url("../images/main/line_footer.webp") no-repeat right 4px;
 }
 
 .footer_con .footer_menu .color {
@@ -745,7 +745,7 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-image: url("../images/main/lnb_arrow_down.png");
+  background-image: url("../images/main/lnb_arrow_down.webp");
   transition: transform 0.3s;
 }
 .m_nav .m_menu_item.active .m_menu_link {
