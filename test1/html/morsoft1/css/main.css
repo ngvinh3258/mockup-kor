@@ -521,7 +521,8 @@ li {
   border: 2px solid #dbdcdf;
 }
 .main_con3 .btn_main_con3_header_add span {
-  transform: scale(4, 4);
+  font-size: 46px;
+  font-weight: lighter;
   color: #9299b5;
 }
 .main_con3 .main_con3_list_project li {
