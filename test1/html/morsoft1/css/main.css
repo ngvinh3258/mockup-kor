@@ -257,8 +257,6 @@ li {
   padding: 1px 18px;
 }
 .form_box .icon_search img {
-  height: 18px;
-  width: 18px;
   filter: brightness(0) invert(1);
 }
 .form_box_bottom {
@@ -295,10 +293,7 @@ li {
   width: 185px;
   height: 42px;
 }
-.form_box_bottom .btn_search_container img {
-  height: 18px;
-  width: 17px;
-}
+
 .form_box_bottom .btn_search {
   height: 18px;
   gap: 4px;
@@ -631,14 +626,13 @@ li {
 }
 .main_con4 ul li img {
   border: 1px solid #dcdcdc;
+  width: 100%;
+  height: auto;
 }
 .main_con4 .btn_prev img,
 .main_con4 .btn_next img,
 .main_con1_body .btn_prev img,
 .main_con1_body .btn_next img {
-  height: 36px;
-  width: 16px;
-  aspect-ratio: 16/36;
   filter: brightness(0);
 }
 
