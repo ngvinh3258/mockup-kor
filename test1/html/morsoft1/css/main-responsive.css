@@ -14,8 +14,6 @@
 
 @media all and (max-width: 768px) {
   .main_wrap .form_box {
-    /* bottom: 0;
-    top: unset; */
     right: unset;
     position: relative;
     border-radius: unset;
@@ -46,7 +44,7 @@
     position: unset;
     width: 100%;
   }
-  .main_con2_right .gyeonggi-do {
+  .main_con2_right .gyeonggi_do {
     padding-left: 50px;
     padding-bottom: 20px;
   }

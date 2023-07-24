@@ -218,19 +218,27 @@
 					<section class="ma_visual">
 						<script type="text/javascript">
 							$(document).ready(function () {
-								$('._slider_').bxSlider({
-									pagerCustom: "#bx-pager",
+								var sildePage = $('._slider_').bxSlider({
+									pagerCustom: "#bx_pager",
 									auto: true,
 									autoControls: true,
 									minSlides: 1,
 									maxSlides: 1,
-									// slideWidth: width.innerWidth,
 									controls: true,
-									autoControlsSelector: "#bx_controls_auto",
 									startText: "",
 									stopText: "",
 									nextText: "",
 									prevText: ""
+								});
+								$("#bx_start").on("click", function () {
+									$(".bx_stop").removeClass("active");
+									$(this).addClass('active');
+									sildePage.startAuto(); // Move to the start slide
+								});
+								$("#bx_stop").on("click", function () {
+									$(".bx_start").removeClass("active");
+									$(this).addClass('active');
+									sildePage.stopAuto(); // Move to the stop slide
 								});
 							});
 						</script>
@@ -242,18 +250,15 @@
 						</ul>
 						<div class="sl_box">
 							<div class="sl_action_box">
-								<div id="bx-pager" class="bx-pager bx-default-pager">
-									<div class="bx-pager-item"><a data-slide-index="0" class="bx-pager-link active"></a>
+								<div id="bx_pager" class="bx_pager">
+									<div class="bx_pager_item"><a data-slide-index="0" class="bx_pager_link active"></a>
 									</div>
-									<div class="bx-pager-item"><a data-slide-index="1" class="bx-pager-link"></a></div>
+									<div class="bx_pager_item"><a data-slide-index="1" class="bx_pager_link"></a></div>
 								</div>
-								<div id="bx_controls_auto" class="bx_controls_auto">
-									<div class="bx_controls_auto-item">
-										<a class="bx-start">
-										</a>
-									</div>
-									<div class="bx_controls_auto-item"><a class="bx-stop"></a>
-									</div>
+								<div class="bx_controls_auto">
+									<a id="bx_start" class="bx_start active bx_controls_auto_item">
+									</a>
+									<a id="bx_stop" class="bx_stop bx_controls_auto_item"></a>
 								</div>
 							</div>
 
@@ -271,7 +276,7 @@
 								<div class="box_search_input">
 									<input type="text" placeholder="찾으시는 정보를 입력하세요." />
 									<div class="icon_search">
-										<img src="./images/main/search-icon.png" alt="search-icon-input" />
+										<img src="./images/main/search_icon.png" alt="img_search_icon_input" />
 									</div>
 								</div>
 								<small>추천검색어 : #임차보증금#분양정보</small>
@@ -279,10 +284,10 @@
 							<div class="form_box_bottom">
 								<div class="d-flex box_bottom_select">
 									<div class="box_bottom_header d-flex">
-										<img src="./images/main/avatar-box.png" alt="avatar-box" />
+										<img src="./images/main/avatar_box.png" alt="img_avatar_box" />
 										<p>주거소식 찾기</p>
 									</div>
-									<div class="select-box">
+									<div class="select_box">
 										<select class="">
 											<option value="1">대상별</option>
 										</select>
@@ -298,8 +303,8 @@
 									</div>
 								</div>
 								<div class="btn_search_box"><button>
-										<div class="btn_search"><img src="./images/main/search-icon.png"
-												alt="search-button" /> 소식 찾기</div>
+										<div class="btn_search"><img src="./images/main/search_icon.png"
+												alt="btn_search" /> 소식 찾기</div>
 									</button></div>
 							</div>
 						</div>
@@ -355,7 +360,7 @@
 						<button class="main_con1_header_btn">개발공사</button>
 					</div>
 					<div class="main_con1_house d-flex align-center">
-						<img src="./images/main/icon-house.png" width="34" height="33" alt="house" />
+						<img src="./images/main/icon_house.png" width="34" height="33" alt="house" />
 						<p>모집공고 조회</p>
 					</div>
 					<div class="box_sl_recruitment_action">
@@ -459,20 +464,20 @@
 			<section class="main_con2 d-flex  clearfix">
 
 				<div class="main_con2_left">
-					<img src="./images/main/banner-blue.png" />
+					<img src="./images/main/banner_blue.png" />
 				</div>
 				<div class="main_con2_right d-flex">
 
-					<div class="gyeonggi-do d-flex">
-						<div class="gyeonggi-do_header d-flex">
+					<div class="gyeonggi_do d-flex">
+						<div class="gyeonggi_do_header d-flex">
 							<h1 style="font-size: 25px;">경기도 </h1><img style="height: 31px; width: 28px;"
-								src="./images/main/address.png" alt="address-icon" />
+								src="./images/main/address.png" alt="address_icon" />
 						</div>
 						<p style="font-size: 39px;font-weight: 600;">임대/분양정보 한눈에 보기</p>
 						<p style="font-size: 15px;">내가 검색한 주거정책 및 임대/분양 상세 정보를 지역별로 지도에서 확인 할 수 있습니다.</p>
-						<button class="btn_view-detail d-flex align-center">자세히보기 <p>+</p></button>
+						<button class="btn_view_detail d-flex align-center">자세히보기 <p>+</p></button>
 					</div>
-					<img class="img-yellow" src="./images/main/img-yellow.png" />
+					<img class="img_yellow" src="./images/main/img_yellow.png" />
 				</div>
 			</section>
 			<section class="main_con3 clearfix d-flex">
@@ -550,16 +555,16 @@
 				<div class="main_con3_right">
 					<ul class="_slider_notice">
 						<li class="">
-							<img src="./images/main/image-slider-bot.png" alt="img_slider_bot" />
+							<img src="./images/main/image_slider_bot.png" alt="img_slider_bot" />
 						</li>
 						<li class="">
-							<img src="./images/main/image-slider-bot.png" alt="img_slider_bot" />
+							<img src="./images/main/image_slider_bot.png" alt="img_slider_bot" />
 						</li>
 						<li class="">
-							<img src="./images/main/image-slider-bot.png" alt="img_slider_bot" />
+							<img src="./images/main/image_slider_bot.png" alt="img_slider_bot" />
 						</li>
 						<li class="">
-							<img src="./images/main/image-slider-bot.png" alt="img_slider_bot" />
+							<img src="./images/main/image_slider_bot.png" alt="img_slider_bot" />
 						</li>
 					</ul>
 					<ul class="_slider_notice_action d-flex">
@@ -649,8 +654,8 @@
 	<!--// container -->
 	<!--footer inc -->
 	<footer>
-		<div class="footer-con clearfix">
-			<ul class="footer_Menu">
+		<div class="footer_con clearfix">
+			<ul class="footer_menu">
 				<li class="color">
 					<a href="" target="_blank" title="새창"><span>개인정보처리방침</span></a>
 				</li>
